@@ -1,0 +1,8 @@
+const oneToHundred = Array.from({ length: 100 }, (x, i) => i + 1);
+
+const sum = oneToHundred.reduce((sum, n) => sum + n, 0);
+const sumSquared = sum * sum;
+
+const squaredSum = oneToHundred.reduce((sum, n) => sum + n * n, 0);
+
+console.log(sumSquared - squaredSum);
